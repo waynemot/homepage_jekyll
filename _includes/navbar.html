@@ -1,0 +1,38 @@
+<style>
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+    li{
+        margin: 5px;
+    }
+</style>
+
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            {%- if page_paths -%}
+              {%- for path in page_paths -%}
+                {%- assign my_page = site.pages | where: "path", path | first -%}
+                {%- if my_page.title -%}
+                    {% if my_page.url == page.url %}
+                        <h4 class="text-white"><a class="active page-link" href="{{ my_page.url }}">{{ my_page.title }}</a></h4>
+<!--                        <li><a class="active page-link" href="{{ my_page.url }}">{{ my_page.title }}</a></li>-->
+                    {%-else -%}
+                        <h4 class="text-white"><a class="active page-link" href="{{ my_page.url }}">{{ my_page.title }}</a></h4>
+<!--                        <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>-->
+                    {% endif %}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>

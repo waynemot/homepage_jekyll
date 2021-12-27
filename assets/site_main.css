@@ -1,0 +1,36 @@
+header#login-header #header .name {
+  font-family: Mercury SSm Ltd Caps A,Mercury SSm Ltd Caps B,Georgia,serif !important;
+  font-size: 0.85em;
+  margin: 1em 0 0 0.67em;
+  font-style: italic;
+}
+
+#dcf-site-affiliation {
+  font-weight: 700;
+  font-size: 0.6em;
+  display: inline-flex;
+  font-stretch: condensed;
+  padding-left: 1.5em;
+  padding-bottom: 0.2em;
+  line-height: 1em;
+}
+
+#dcf-site-title {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.dcf-black {
+  color: #000 !important;
+}
+
+a {
+  color: #dd0000;
+  text-decoration: none;
+}
+a:visited {
+  color: #dd0000;
+}
+a:hover {
+  color: #b00;
+}
