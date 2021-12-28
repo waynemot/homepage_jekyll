@@ -41,12 +41,12 @@ defaults:
 sass:
   load_paths:
     - _sass
-    -  /Users/wmotycka/.rvm/gems/ruby-2.6.0@wmotycka_home/gems/bootstrap-5.1.0/assets/stylesheets
+    -  /Users/wmotycka/.rvm/gems/ruby-2.6.4@wmotycka_home/gems/bootstrap-5.1.0/assets/stylesheets
 
 bootstrap:
   load_paths:
     - _javascripts
-    - /Users/wmotycka/.rvm/gems/ruby-2.6.0@wmotycka_home/gems/bootstrap-5.1.0/assets/javascript
+    - /Users/wmotycka/.rvm/gems/ruby-2.6.4@wmotycka_home/gems/bootstrap-5.1.0/assets/javascript
 #
 # Exclude from processing.
 # The following items will not be processed, by default.
