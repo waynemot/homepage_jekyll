@@ -1,3 +1,9 @@
+:root{
+  --body-color: --color;
+  --visited: #9d000;
+  font-size:1em;
+  line-height:1.5;
+}
 header#login-header #header .name {
   font-family: Mercury SSm Ltd Caps A,Mercury SSm Ltd Caps B,Georgia,serif !important;
   font-size: 0.85em;
@@ -25,11 +31,11 @@ header#login-header #header .name {
 }
 
 a {
-  color: #dd0000;
+  color: var(--body-color);
   text-decoration: none;
 }
 a:visited {
-  color: #dd0000;
+  color: var(--visited);
 }
 a:hover {
   color: #b00;
