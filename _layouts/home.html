@@ -4,98 +4,22 @@ layout: default
 
 <div class="home dcf-bleed">
   {%- if page.title -%}
-    <div class="dcf-wrapper dcf-mt-1">
-      <ul class="dcf-grid-halves@sm dcf-list-bare">
-        <li class="dcf-card dcf-d-flex dcf-flex-col">
-          <div class="dcf-card-block">
-            <div class="dcf-image-wrapper">
-              <img class='dcf-first' src="assets/images/wmotycka-square-300.jpg" alt="#{{ page.title }}" />
-            </div>
-          </div>
-        </li>
-        <li class="dcf-card dcf-d-flex dcf-flex-col">
-          <div class="dcf-card-block">
-            Research Technical Support Specialist
-            <br/>
-            School of Computing Web Technologies Support
-            <br/>
-            Office: Avery 27A
-            <br/>
-            Phone: (402) 472-5069
-            <br/>
-            Email: <a class="u-email" href="mailto:wmotycka@cse.unl.edu">wmotycka&lt;at&gt;cse.unl.edu</a>
-            <br/>
-            <hr/>
-            <h5>
-              Education
-            </h5>
-            A.S. Electronics Engineering<br/>
-            B.S. Computer Science<br/>
-            M.S. Computer Science
-            <br/>
-            <br/>
-            <h5>
-              Past Experience
-            </h5>
-            <ul class="dcf-list-bare">
-              <li>
-                AT&T Bell Telephone Laboratories
-                <ul class="dcf-list dcf-txt-xs">
-                  <li>
-                    Switch - adjunct processor interface hardware development
-                  </li>
-                  <li>
-                    Adjunct systems test engineering
-                  </li>
-                  <li>
-                    Factory software production support
-                  </li>
-                  <li>
-                    Quality management process definition and deployment
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Lucent Technologies - Bell Labs
-                <ul class="dcf-list dcf-txt-xs">
-                  <li>
-                    Product support engineering
-                  </li>
-                  <li>
-                    Project management
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Avaya Labs
-                <ul class="dcf-list dcf-txt-xs">
-                  <li>
-                    Voice mail/integrated messaging systems engineering
-                  </li>
-                  <li>
-                    Central-office messaging systems engineering
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
+
   {%- endif -%}
   <div class="dcf-wrapper">
+    {% include home.html %}
     {{ content }}
   </div>
 
-  <div class="dcf-wrapper">
+  <!--<div class="dcf-wrapper">
     {% if site.paginate %}
       {% assign posts = paginator.posts %}
     {% else %}
       {% assign posts = site.posts %}
     {% endif %}
-  </div>
+  </div>-->
 
-  <div class="dcf-wrapper">
+<!--  <div class="dcf-wrapper">
     {%- if posts.size > 0 -%}
       {%- if page.list_title -%}
         <h2 class="post-list-heading">{{ page.list_title }}</h2>
@@ -135,6 +59,6 @@ layout: default
         </div>
       {%- endif %}
     {%- endif -%}
-  </div>
+  </div>-->
 
 </div>
