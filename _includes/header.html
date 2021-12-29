@@ -7,7 +7,7 @@
         <span class='dcf-uppercase unl-font-serif-ltd-caps text-uppercase'>NEBRASKA&nbsp;&mdash;&nbsp;LINCOLN</span>
       </a>
     </div>
-    <div id="dcf-logo-lockup" class="dcf-logo-lockup dcf-flex-row dcf-d-flex dcf-wrapper dcf-d-flex dcf-ai-flex-end dcf-relative dcf-overflow-hidden">
+    <div id="dcf-logo" class="dcf-logo dcf-flex-row dcf-d-flex dcf-wrapper dcf-d-flex dcf-ai-flex-end dcf-relative dcf-overflow-hidden">
       <noscript>
         <!-- This is a simple shim to provide vertical space for the noscript warning -->
         <div id="wdn_noscript_padding"></div>
@@ -20,11 +20,10 @@
     </div>
   </div>
 </header>
-<div class="dcf-wrapper">
-  {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
 <!--  <a class="site-title" rel="author" href="{{ '#' | relative_url }}">{{ site.title | escape }}</a>-->
-</div>
+
 <!--<div class="dcf-wrapper">
   <nav class="navbar navbar-default navbar-fixed-top main-navbar site-header">
     <div class="container">
@@ -77,4 +76,4 @@
 </div>
 
 {%- include navbar.html %}
--->
+
