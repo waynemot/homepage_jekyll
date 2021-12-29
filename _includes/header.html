@@ -1,26 +1,20 @@
-<header class="site-header dcf-d-flex dcf-ai-center dcf-pb-4 dcf-bb-1 dcf-bb-solid unl-bb-lighter-gray login-card-pt login-card-px" id="login-header" role="banner">
-  <div class="content">
-    <div id="header">
-      <div class='name'>
-        <a href='https://www.unl.edu/' title="University of Nebraska Home">
-          <span class='text-uppercase'>UNIVERSITY </span>
-          <span class='font-italic'>of </span>
-          <span class='text-uppercase'>NEBRASKA&nbsp;&mdash;&nbsp;LINCOLN</span>
-        </a>
-      </div>
-      <div id="logo_wrapper">
-        <div class="dcf-ai-center dcf-jc-between dcf-relative">
-          <div class="dcf-grid">
-            <noscript>
-              <!-- This is a simple shim to provide vertical space for the noscript warning -->
-              <div id="wdn_noscript_padding"></div>
-            </noscript>
-            <div class="dcf-logo-lockup dcf-wrapper dcf-relative" style="display: flex;">
-              <div id="dcf-header-logo" style="display: inline-flex;">
-                {%- include unl_header.html -%}
-              </div>
-            </div>
-          </div>
+<header class="dcf-header site-header dcf-d-flex dcf-ai-center dcf-bb-1 dcf-bb-solid unl-bb-lighter-gray login-card-pt login-card-px" id="dcf-header" role="banner">
+  <div class="content dcf-bleed">
+    <div class='dcf-header-global dcf-wrapper dcf-d-flex dcf-flex-row dcf-flex-nowrap dcf-ai-center dcf-jc-between dcf-relative dcf-bt-solid dcf-bt-3 unl-bt-scarlet' style="width: -moz-available;">
+      <a id='dcf-institution-title' class="dcf-institution-title dcf-flex-shrink-0 dcf-pt-3 dcf-pb-3 dcf-txt-xs unl-ls-3" href='https://www.unl.edu/' title="University of Nebraska Home">
+        <span class='dcf-uppercase unl-font-serif-ltd-caps text-uppercase'>UNIVERSITY </span>
+        <span class='dcf-italic unl-font-serif-ltd-italic font-italic'>of </span>
+        <span class='dcf-uppercase unl-font-serif-ltd-caps text-uppercase'>NEBRASKA&nbsp;&mdash;&nbsp;LINCOLN</span>
+      </a>
+    </div>
+    <div id="dcf-logo-lockup" class="dcf-logo-lockup dcf-flex-row dcf-d-flex dcf-wrapper dcf-d-flex dcf-ai-flex-end dcf-relative dcf-overflow-hidden">
+      <noscript>
+        <!-- This is a simple shim to provide vertical space for the noscript warning -->
+        <div id="wdn_noscript_padding"></div>
+      </noscript>
+      <div class="dcf-logo-lockup dcf-wrapper dcf-relative" style="display: flex;">
+        <div id="dcf-header-logo" style="display: inline-flex;">
+          {%- include unl_header.html -%}
         </div>
       </div>
     </div>
@@ -29,9 +23,9 @@
 <div class="dcf-wrapper">
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
-  <a class="site-title" rel="author" href="{{ '#' | relative_url }}">{{ site.title | escape }}</a>
+<!--  <a class="site-title" rel="author" href="{{ '#' | relative_url }}">{{ site.title | escape }}</a>-->
 </div>
-<div class="dcf-wrapper">
+<!--<div class="dcf-wrapper">
   <nav class="navbar navbar-default navbar-fixed-top main-navbar site-header">
     <div class="container">
       <div class="navbar-header">
@@ -58,8 +52,8 @@
         </ul>
       </div>
     </div>
-  </nav>
-  {%- if page_paths -%}
+  </nav>-->
+  <!--{%- if page_paths -%}
   <nav class="site-nav">
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger">
@@ -83,4 +77,4 @@
 </div>
 
 {%- include navbar.html %}
-
+-->

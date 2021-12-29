@@ -1,9 +1,3 @@
-:root{
-  --body-color: --color;
-  --visited: #9d000;
-  font-size:1em;
-  line-height:1.5;
-}
 header#login-header #header .name {
   font-family: Mercury SSm Ltd Caps A,Mercury SSm Ltd Caps B,Georgia,serif !important;
   font-size: 0.85em;
@@ -18,7 +12,7 @@ header#login-header #header .name {
   font-stretch: condensed;
   padding-left: 1.5em;
   padding-bottom: 0.2em;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 #dcf-site-title {
@@ -31,12 +25,41 @@ header#login-header #header .name {
 }
 
 a {
-  color: var(--body-color);
+  color: #dd0000;
   text-decoration: none;
 }
 a:visited {
-  color: var(--visited);
+  color: #dd0000;
 }
 a:hover {
   color: #b00;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --body-bg: #FFFFFF;
+        --body-color: #242423;
+        --link: #d00000;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: #242423;
+        --body-color: #FFFFFF;
+        --link: #71bdd3;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --link: #fefdfa;
+    }
+    a:visited {
+        color: #fefdfe;
+    }
+    a:hover {
+        color: #71bdd3;
+    }
 }
