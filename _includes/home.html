@@ -1,6 +1,3 @@
----
-layout: home
----
 
 <div class="home">
   {%- if page.title -%}
@@ -9,6 +6,84 @@ layout: home
     </h3>
   {%- endif -%}
 
+  <div class="dcf-wrapper dcf-mt-1">
+    <ul class="dcf-grid-halves@sm dcf-list-bare">
+      <li class="dcf-card dcf-d-flex dcf-flex-col">
+        <div class="dcf-card-block">
+          <div class="dcf-image-wrapper">
+            <img class='dcf-first' src="assets/images/wmotycka-square-300.jpg" alt="#{{ page.title }}" />
+          </div>
+        </div>
+      </li>
+      <li class="dcf-card dcf-d-flex dcf-flex-col">
+        <div class="dcf-card-block">
+          Research Technical Support Specialist
+          <br/>
+          School of Computing Web Technologies Support
+          <br/>
+          Office: Avery 27A
+          <br/>
+          Phone: (402) 472-5069
+          <br/>
+          Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email | replace: "@", "&lt;at&gt;" }}</a>
+          <br/>
+          <hr/>
+          <h5>
+            Education
+          </h5>
+          A.S. Electronics Engineering<br/>
+          B.S. Computer Science<br/>
+          M.S. Computer Science
+          <br/>
+          <br/>
+          <h5>
+            Past Experience
+          </h5>
+          <ul class="dcf-list-bare">
+            <li>
+              AT&T Bell Telephone Laboratories
+              <ul class="dcf-list dcf-txt-xs">
+                <li>
+                  Switch - adjunct processor interface hardware development
+                </li>
+                <li>
+                  Adjunct systems test engineering
+                </li>
+                <li>
+                  Factory software production support
+                </li>
+                <li>
+                  Quality management process definition and deployment
+                </li>
+              </ul>
+            </li>
+            <li>
+              Lucent Technologies - Bell Labs
+              <ul class="dcf-list dcf-txt-xs">
+                <li>
+                  Product support engineering
+                </li>
+                <li>
+                  Project management
+                </li>
+              </ul>
+            </li>
+            <li>
+              Avaya Labs
+              <ul class="dcf-list dcf-txt-xs">
+                <li>
+                  Voice mail/integrated messaging systems engineering
+                </li>
+                <li>
+                  Central-office messaging systems engineering
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
   {{ content }}
 
   {%- if site.posts.size > 0 -%}

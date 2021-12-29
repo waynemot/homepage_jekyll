@@ -2,11 +2,11 @@
   <data class="u-url" href="{{ '#' | relative_url }}"></data>
 
   <div style="margin: 0 5.62vw 0 5.62vw;">
-    <div style="width: 50%; border-bottom: 1px solid #cf0000;"></div>
-    <div class="footer-col-wrapper">
+    <div style="width: 100%; border-bottom: 1px solid #d00000;"></div>
+    <!--<div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">
+          <li class="dcf-list">
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
@@ -14,21 +14,25 @@
             {%- endif -%}
             </li>
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email | replace: "@", "&lt;at&gt;" }}</a></li>
             {%- endif -%}
         </ul>
-      </div>
+      </div>-->
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
       </div>
 
-      <div class="footer-col footer-col-3">
+      <div class="footer-col footer-col-3 dcf-txt-2xs dcf-d-inline-flex">
         {{ site.title | escape -}}
         <br/>Research Technical Support Specialist<br/>
-        Web Author/Researcher<br/>
-        School of Computing<br/>
-        University of Nebraska&nbsp;&dash;&nbsp;Lincoln<br/></p>
+        {{ site.affiliation }}<br/>
+        </p>
+      </div>
+      <div class="footer-col footer-col-3 dcf-d-inline-flex">
+        <div class="dcf-ai-end" style="transform: translate(50vw,3vw);">
+          <img src="/assets/images/R_UNL_rev.png" height="60" width="80" viewport="0 100 120 0"/>
+        </div>
       </div>
     </div>
 
