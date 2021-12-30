@@ -63,3 +63,18 @@ a:hover {
         color: #71bdd3;
     }
 }
+
+#footer_unl_rev_div {
+    transform: translate(50vw,3vw);
+}
+
+@media screen and (max-width: 904px) {
+    #footer_unl_rev_div {
+        transform: translate(40vw, 3vw);
+    }
+}
+@media screen and (max-width: 675px) {
+    #footer_unl_rev_div {
+        transform: translate(15vw, 3vw);
+    }
+}
