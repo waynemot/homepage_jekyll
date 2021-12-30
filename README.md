@@ -1,4 +1,4 @@
-== UNL School of Computing Homepage project
+## UNL School of Computing Homepage project
 A University of Nebraska (UNL) 
 School of Computing (SoC) homepage project implemented in Jekyll using external styling links.
 
