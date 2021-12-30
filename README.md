@@ -3,7 +3,7 @@ A University of Nebraska (UNL)
 School of Computing (SoC) homepage project implemented in Jekyll using external styling links.
 
 This is my personal homepage on the cse.unl.edu server.
-The external styling used is provided by the UNL Web Developers Network, <wdn.unl.edu>, and
+The external styling used is provided by the UNL Web Developers Network, [wdn.unl.edu](https://wdn.unl.edu), and
 intends to loosely emulate the header/look of the UNL WDN web template. 
 This includes reactive CSS responding to
 dark-theme settings honored by browsers. Use of the styles provided by the UNL WDN
