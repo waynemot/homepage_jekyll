@@ -1,14 +1,18 @@
 ---
-page-title: Wayne Motycka
+page-title: Building a site
 layout: post
 title:  "Building a Site"
-date:   2021-12-29 19:38:34 -0500
+date:   2021-12-28 19:38:34 -0500
 categories: jekyll web authoring faq
 ---
 
-Building a Jekyll website on the CSE server is easy.
+Building a Jekyll website on the School of Computing CSE server entails
+starting with a Jekyll installation instance.
 This example uses the Jekyll basic 'blog' template, with modifications
 to the particular layout elements to render as my personal home page.
+You can download a copy of the source code from my Github repository:
+
+[https://github.com/waynemot/homepage_jekyll][git-project]
 
 This home page is hosted by the CSE server in my 'public_html' directory.
 
@@ -29,3 +33,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 [home]: https://cse.unl.edu/~wmotycka
+[git-project] https://github.com/waynemot/homepage_jekyll
