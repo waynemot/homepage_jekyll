@@ -38,8 +38,12 @@ as well. I have been using Jetbrain's
 RubyMine, but equally capable Ruby IDEs like 
 VisualStudio, NetBeans and Eclipse can be used.
 
-Both CSE and CSCE servers offer many other resources, e.g. a MySQL database, that can be leveraged through
-the use of Jekyll and Ruby.
+Home pages can be hosted on either CSE or CSCE, with the default being CSE. Simple
+[.htaccess][htaccess] commands can be used that redirect CSE-directed traffic to the CSCE 
+version of your page content.  CSCE offers a wider range of server capabilities, at the
+expense of added configuration complexity.
+Both CSE and CSCE servers offer many common server resources, e.g. a MySQL database, 
+that can be leveraged through the use of Jekyll and Ruby.
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
@@ -49,3 +53,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [home]: https://cse.unl.edu/~wmotycka
 [git-project]: https://github.com/waynemot/homepage_jekyll
 [wdn]:  https://wdn.unl.edu
+[htaccess]: https://www.redhat.com/sysadmin/beginners-guide-redirects-htaccess
