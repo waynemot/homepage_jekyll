@@ -2,4 +2,5 @@
 
 PATH=$PATH:${HOME}/bin
 
-jekyll build
+jekyll build && cp -r _site/* ${HOME}/public_html/.
+
