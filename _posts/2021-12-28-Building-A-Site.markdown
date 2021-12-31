@@ -20,25 +20,45 @@ The Jekyll generated CSS, JavaScript and
 index.html home page is hosted by the CSE server 
 in my home public_html directory, **~wmotycka/public_html**.
 
+###Jekyll Content and Presentation
 Jekyll is an example of a 'low-code' framework that requires
-limited commands on the server-side to publish content. The
-content consists of files in markdown, (.md) with specific headers.
+Ruby and Jekyll packages installed
+on the server-side to build content into the presentation HTML+CSS+JavaScript presented
+to site visitors.
+The content consists of files in markdown, (.md) format with Jekyll-specific headers,
+layout and includes files in [Liquid][liquid] and HTML syntax, and assets in
+various formats, e.g. css/scss, images (png, jpg, svg, etc.), and javascript (js).
+The layout and includes in Liquid/HTML provide the 'secret-sauce' to 
 Markdown allows quick text markup, such as **bold** to be done, with
-*italic* being equally simple. 
+*italic* being equally simple, all within a style and layout you define.
 
-Using Jekyll for computer science topics, one of the more useful things that
+This ease of 'content capture', focus on content not presentation, is the power of Jekyll.
+An example of using Jekyll for computer science topics, one of the more useful things that
 Jekyll offers is support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+print_hi('Wayne')
+#=> prints 'Hi, Wayne' to STDOUT.
 {% endhighlight %}
 
-Many other markdown controls can be used, and leveraging the power of Ruby, CSS, jQuery + JavaScript,
+Many other [markdown][markdown] controls can be used.
+By manipulating the layout and includes and leveraging the power of 
+Ruby, CSS, jQuery + JavaScript,
 a highly appealing and responsive web presence can be created.
+
+###Authoring Content
+Many Integrated Development Environments (IDEs) support Jekyll development
+as well. I have been using JetBrain's
+RubyMine, but equally capable IDEs like
+VisualStudio, NetBeans and Eclipse can be used that support HTML,
+Javascript, and Ruby and/or Liquid support (plugins) as required.  You can
+do development on CSE, CSCE, or your own system and then upload the project to deploy it on the CSE server.
+I use Github to perform this upload step, which requires using [git][git] project management
+to push up from my system and pull the changes down to CSCE. You can also use `sftp`, remote
+filesystem mounting or similar network file copy mechanisms.
 
 ###Building Jekyll Projects
 Jekyll uses a specific project directory layout, file naming convention, and configuration files
@@ -64,7 +84,9 @@ editing content in your Jekyll project can be done on either CSE or CSCE,
 or within your IDE and uploaded to your site-build (source) directory on CSCE.
 Once the site is built on CSCE using the Jekyll build procedure, deployment
 is as simple as copying the contents of the `_site` subdirectory under your
-project into `~/public_html`. The entire process of building,
+project into `~/public_html`. 
+
+The entire process of building,
 updating and deploying your home page content into your public_html
 directory can also be automated using a shell script,
 making updating your site as easy as uploading the new content and
@@ -72,20 +94,9 @@ running the script! Shell scripts can also be made to run under [crontab][cronta
 that compare the build directory `_site` file last-modified-date to the
 current `public_html` files, building and copying them only if a change is made.
 
-Many Integrated Development Environments (IDEs) support Jekyll development 
-as well. I have been using Jetbrain's
-RubyMine, but equally capable IDEs like 
-VisualStudio, NetBeans and Eclipse can be used that support HTML, 
-Javascript, and Ruby and/or Liquid support plugins as required.
-
-School of computing home pages are hosted on CSE.  A second server, CSCE is also available. While
-the same home page files are served by either CSE or CSCE, each server offer a different 
-set of capabilities that your web pages may want to leverage. Simple
-[.htaccess][htaccess] commands can be used that redirect CSE-directed traffic to the CSCE 
-version of your page content.  CSCE offers a wider range of server capabilities, at the
-expense of added configuration complexity.
-Both CSE and CSCE servers offer many common server resources, e.g. a MySQL database, 
-that can be leveraged through the use of Jekyll and Ruby.
+You may also want to host your site under a subdirectory of `~/public_html`, if so the
+[.htaccess][htaccess] commands can be used that redirect/rewrite CSE-directed traffic 
+to the directory containing your site pages/content.
 
 ### Jekyll Documentation
 
@@ -103,3 +114,6 @@ be directed to the School of Computing systems administration group, <support@cs
 [wdn]:  https://wdn.unl.edu
 [htaccess]: https://www.redhat.com/sysadmin/beginners-guide-redirects-htaccess
 [crontab]: https://www.man7.org/linux/man-pages/man1/crontab.1.html
+[liquid]: https://shopify.github.io/liquid
+[markdown]: https://www.markdownguide.org
+[git]: https:/git-scm.com
