@@ -57,12 +57,12 @@ a highly appealing and responsive web presence can be created. The specifics
 on how are detailed in the Jekyll docs (links below.)
 
 ### Authoring Content
-Many Integrated Development Environments (IDEs) support Jekyll development
-as well. I have been using JetBrain's
+Many Integrated Development Environments (IDEs) support Jekyll development.
+I have been using JetBrain's
 RubyMine, but equally capable IDEs like
 VisualStudio, NetBeans and Eclipse can be used that support HTML,
-Javascript, and Ruby and/or Liquid support (plugins) as required.  You can
-do development on CSE, CSCE, or your own system and then upload the project to deploy it on the CSE server.
+Javascript, and Ruby and/or Liquid support (with plugins as required).  You can
+do development on CSCE, or your own system and then upload the project to deploy it on the CSE server.
 I use Github to perform this upload step, which requires using [git][git] project management
 to push up from my system and pull the changes down to CSCE. You can also use `sftp`, remote
 filesystem mounting or similar network file copy mechanisms.
@@ -97,7 +97,27 @@ The entire process of building,
 updating and deploying your home page content into your public_html
 directory can also be automated using a shell script,
 making updating your site as easy as uploading the new content and
-running the script! Shell scripts can also be made to run under [crontab][crontab]
+running the script! 
+
+{% highlight bash %}
+#!/bin/bash
+
+PATH=$PATH:${HOME}/bin
+
+if [[ `uname -n` -eq "csce" ]]
+then
+  if [[ _site/index.html -nt ../index.html ]] # Determine if the site
+  then
+    jekyll build && cp -r _site/* ${HOME}/public_html/.
+  fi
+else
+  echo "this script only executes on the CSCE system"
+  exit 1
+fi
+{% endhighlight %}
+
+
+Shell scripts can also be made to run under [crontab][crontab]
 that compare the build directory `_site` file last-modified-date to the
 current `public_html` files, building and copying them only if a change is made.
 
