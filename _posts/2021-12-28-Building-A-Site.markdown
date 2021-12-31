@@ -32,9 +32,8 @@ The layout and includes in Liquid/HTML provide the 'secret-sauce' to
 Markdown allows quick text markup, such as **bold** to be done, with
 *italic* being equally simple, all within a style and layout you define.
 
-This ease of 'content capture', focus on content not presentation, is the power of Jekyll.
-An example of using Jekyll for computer science topics, one of the more useful things that
-Jekyll offers is support for code snippets:
+This ease of 'content capture' focuses effort on content not presentation, and forms the power of Jekyll.
+For example, Jekyll offers is support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -43,6 +42,8 @@ end
 print_hi('Wayne')
 #=> prints 'Hi, Wayne' to STDOUT.
 {% endhighlight %}
+
+This is very useful for rapidly making computer science and other technical representations.
 
 Many other [markdown][markdown] controls can be used.
 By manipulating the layout and includes and leveraging the power of 
