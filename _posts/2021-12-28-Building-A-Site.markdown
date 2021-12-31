@@ -29,7 +29,7 @@ The content consists of files in [markdown][markdown], (.md) format with Jekyll-
 layout and includes files in [Liquid][liquid] and HTML syntax, and assets in
 various formats, e.g. css/scss, images (png, jpg, svg, etc.), and javascript (js).
 The layout and includes in Liquid/HTML provide the 'secret-sauce' to 
-Markdown allows quick text markup, such as **bold** to be done, with
+markdown allowing quick text markup, such as **bold** to be done, with
 *italic* being equally simple, all within a style and layout you define.
 
 The ease of 'content capture' is a feature of low-code development and
