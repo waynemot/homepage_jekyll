@@ -20,7 +20,7 @@ The Jekyll generated CSS, JavaScript and
 index.html home page is hosted by the CSE server 
 in my home public_html directory, **~wmotycka/public_html**.
 
-###Jekyll Content and Presentation
+### Jekyll Content and Presentation
 Jekyll is an example of a 'low-code' framework that requires
 Ruby and Jekyll packages installed
 on the server-side to build content into the presentation HTML+CSS+JavaScript presented
@@ -49,7 +49,7 @@ By manipulating the layout and includes and leveraging the power of
 Ruby, CSS, jQuery + JavaScript,
 a highly appealing and responsive web presence can be created.
 
-###Authoring Content
+### Authoring Content
 Many Integrated Development Environments (IDEs) support Jekyll development
 as well. I have been using JetBrain's
 RubyMine, but equally capable IDEs like
@@ -60,7 +60,7 @@ I use Github to perform this upload step, which requires using [git][git] projec
 to push up from my system and pull the changes down to CSCE. You can also use `sftp`, remote
 filesystem mounting or similar network file copy mechanisms.
 
-###Building Jekyll Projects
+### Building Jekyll Projects
 Jekyll uses a specific project directory layout, file naming convention, and configuration files
 to inform the Jekyll builder on how to create the site.
 In this example the Jekyll project directory is placed under my `~/public_html`
