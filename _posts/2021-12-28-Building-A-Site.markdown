@@ -16,7 +16,8 @@ You can download a copy of the source code from my Github repository:
 
 [https://github.com/waynemot/homepage_jekyll][git-project]
 
-and the index.html home page is hosted by the CSE server 
+The Jekyll generated CSS, JavaScript and
+index.html home page is hosted by the CSE server 
 in my home public_html directory, **~wmotycka/public_html**.
 
 Jekyll is an example of a 'low-code' framework that requires
