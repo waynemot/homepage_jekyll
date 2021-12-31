@@ -25,15 +25,18 @@ Jekyll is an example of a 'low-code' framework that requires
 Ruby and Jekyll packages installed
 on the server-side to build content into the presentation HTML+CSS+JavaScript presented
 to site visitors.
-The content consists of files in markdown, (.md) format with Jekyll-specific headers,
+The content consists of files in [markdown][markdown], (.md) format with Jekyll-specific headers,
 layout and includes files in [Liquid][liquid] and HTML syntax, and assets in
 various formats, e.g. css/scss, images (png, jpg, svg, etc.), and javascript (js).
 The layout and includes in Liquid/HTML provide the 'secret-sauce' to 
 Markdown allows quick text markup, such as **bold** to be done, with
 *italic* being equally simple, all within a style and layout you define.
 
-This ease of 'content capture' focuses effort on content not presentation, and forms the power of Jekyll.
-For example, Jekyll offers is support for code snippets:
+The ease of 'content capture' is a feature of low-code development and
+focuses effort on content not presentation.  Once a theme/style is established,
+content is added via by new markdown documents.  This content can be mundane
+text with embedded images or links, or leverage the features of markdown.
+For example, Jekyll markdown offers support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -45,10 +48,13 @@ print_hi('Wayne')
 
 This is very useful for rapidly making computer science and other technical representations.
 
-Many other [markdown][markdown] controls can be used.
-By manipulating the layout and includes and leveraging the power of 
-Ruby, CSS, jQuery + JavaScript,
-a highly appealing and responsive web presence can be created.
+Many other markdown controls can be used.
+
+### Theme Presentation Styling
+By manipulating the layout and includes files, and leveraging the power of 
+Liquid, Ruby, CSS, jQuery + JavaScript,
+a highly appealing and responsive web presence can be created. The specifics
+on how are detailed in the Jekyll docs (links below.)
 
 ### Authoring Content
 Many Integrated Development Environments (IDEs) support Jekyll development
