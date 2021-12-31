@@ -65,16 +65,16 @@ a:hover {
 }
 
 #footer_unl_rev_div {
-    transform: translate(50vw,3vw);
+    transform: translate(50vw,2vw);
 }
 
 @media screen and (max-width: 904px) {
     #footer_unl_rev_div {
-        transform: translate(40vw, 3vw);
+        transform: translate(40vw, 2vw);
     }
 }
 @media screen and (max-width: 675px) {
     #footer_unl_rev_div {
-        transform: translate(15vw, 3vw);
+        transform: translate(15vw, 2vw);
     }
 }
