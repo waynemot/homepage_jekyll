@@ -39,14 +39,37 @@ print_hi('Tom')
 Many other markdown controls can be used, and leveraging the power of Ruby, CSS, jQuery + JavaScript,
 a highly appealing and responsive web presence can be created.
 
-Editing content can be done on CSE
-or within your IDE and uploaded to your site-build (source) directory on CSE.
-Once the site is built on CSE using the Jekyll build procedure, deployment
-is as simple as copying the contents of the **_site** subdirectory under your
-project. The entire process of building,
+###Building Jekyll Projects
+Jekyll uses a specific project directory layout, file naming convention, and configuration files
+to inform the Jekyll builder on how to create the site.
+In this example the Jekyll project directory is placed under my `~/public_html`
+directory. Your build/install script can be adapted to accommodate wherever
+you choose to place the project source.
+
+Jekyll requires a build step, which composes the markdown, static HTML,
+images, CSS and JavaScript into a site bundle (directory). This
+build step requires using the capabilities provided by
+the School of Computing's alternate server, **CSCE**. The **CSCE** server (csce.unl.edu)
+is configured to support a wider array of technologies, including support
+for Jekyll and Ruby. These capabilities are used to build your Jekyll
+project code into the HTML, CSS, image and JavaScript assets used to
+present it. Your current CSE login and password are used to log-in to
+**CSCE**, and after login your home directory and subdirectories are the same
+as used by CSE. This means file and directory changes made on **CSCE** are immediately 
+effective on CSE due to the home directory being shared by the two servers.
+
+Owing to the shared home directory nature of the CSE and CSCE servers,
+editing content in your Jekyll project can be done on either CSE or CSCE,
+or within your IDE and uploaded to your site-build (source) directory on CSCE.
+Once the site is built on CSCE using the Jekyll build procedure, deployment
+is as simple as copying the contents of the `_site` subdirectory under your
+project into `~/public_html`. The entire process of building,
 updating and deploying your home page content into your public_html
-directory can also be automated using a [crontab][crontab]
-script, making updating your site as easy as uploading the new content!
+directory can also be automated using a shell script,
+making updating your site as easy as uploading the new content and
+running the script! Shell scripts can also be made to run under [crontab][crontab]
+that compare the build directory `_site` file last-modified-date to the
+current `public_html` files, building and copying them only if a change is made.
 
 Many Integrated Development Environments (IDEs) support Jekyll development 
 as well. I have been using Jetbrain's
