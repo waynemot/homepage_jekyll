@@ -61,7 +61,7 @@ Many Integrated Development Environments (IDEs) support Jekyll development.
 I have been using JetBrain's
 RubyMine, but equally capable IDEs like
 VisualStudio, NetBeans and Eclipse can be used that support HTML,
-Javascript, and Ruby and/or Liquid support (with plugins as required).  You can
+Javascript, and Ruby and/or Liquid (with plugins as required).  You can
 do development on CSCE, or your own system and then upload the project to deploy it on the CSE server.
 I use Github to perform this upload step, which requires using [git][git] project management
 to push up from my system and pull the changes down to CSCE. You can also use `sftp`, remote
