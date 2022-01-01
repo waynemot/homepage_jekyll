@@ -25,9 +25,9 @@ Jekyll is an example of a 'low-code' framework that requires
 Ruby and Jekyll packages installed
 on the server-side to build content into the presentation HTML+CSS+JavaScript presented
 to site visitors.
-The content consists of files in [markdown][markdown], (.md) format with Jekyll-specific headers,
+The content consists of files in [markdown][markdown] (.md) format with Jekyll-specific headers,
 layout and includes files in [Liquid][liquid] and HTML syntax, and assets in
-various formats, e.g. css/scss, images (png, jpg, svg, etc.), and javascript (js).
+various formats, e.g. CSS/SCSS, images (png, jpg, svg, etc.), and JavaScript (js).
 The layout and includes in Liquid/HTML provide the 'secret-sauce' to 
 markdown allowing quick text markup, such as **bold** to be done, with
 *italic* being equally simple, all within a style and layout you define.
@@ -125,10 +125,9 @@ else
 fi
 {% endhighlight %}
 
-
-Shell scripts can also be made to run under [crontab][crontab]
-that compare the build directory `_site` file last-modified-date to the
-current `public_html` files, building and copying them only if a change is made.
+Having the script only build when site content files have changed
+the build/deploy scripts can run as [crontab][crontab] jobs allowing
+running on the schedule specified.
 
 You may also want to host your site under a subdirectory of `~/public_html`, if so the
 [.htaccess][htaccess] commands can be used that redirect/rewrite CSE-directed traffic 
