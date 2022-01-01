@@ -24,6 +24,25 @@ header#login-header #header .name {
   color: #000 !important;
 }
 
+.footer-margins {
+    margin: 0 5.62vw 0 5.62vw;
+}
+.footer-margins a {
+    color: #fefdfa;
+}
+
+.social-media-list {
+    list-style: none;
+}
+
+.social-media-list li svg {
+    display:flex;
+    transform: translate(0, 2vw);
+    viewBox: "0 0 60 60";
+    height: 30px;
+    width: 30px;
+}
+
 a {
   color: #dd0000;
   text-decoration: none;
