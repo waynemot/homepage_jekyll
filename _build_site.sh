@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATH=$PATH:${HOME}/bin
+PATH=$PATH:${HOME}/bin:/usr/local/rvm/gems/ruby-2.6.4\@wmotycka_home/bin/jekyll
 
 if [[ `uname -n` -eq "csce" ]]
 then
@@ -15,7 +15,7 @@ then
     done
     if [[ $rebuild = 1 ]]
     then
-        jekyll build && cp -r _site/* ${HOME}/public_html/.
+        jekyll build JEKYLL_ENV=production && cp -r _site/* ${HOME}/public_html/.
     fi
 else
     echo "this script only executes on the CSCE system"
