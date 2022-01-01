@@ -1,41 +1,41 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ '#' | relative_url }}"></data>
+  <div style="width: 100%; border-bottom: 1px solid #d00000;"></div>
 
-  <div style="margin: 0 5.62vw 0 5.62vw;">
-    <div style="width: 100%; border-bottom: 1px solid #d00000;"></div>
-    <!--<div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="dcf-list">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email | replace: "@", "&lt;at&gt;" }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>-->
+  <div class="dcf-bleed unl-bg-scarlet">
+    <div class='footer-margins'>
+      <!--<div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li class="dcf-list">
+              {%- if site.author -%}
+                {{ site.author | escape }}
+              {%- else -%}
+                {{ site.title | escape }}
+              {%- endif -%}
+              </li>
+              {%- if site.email -%}
+              <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email | replace: "@", "&lt;at&gt;" }}</a></li>
+              {%- endif -%}
+          </ul>
+        </div>-->
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
+        <div class="footer-col footer-col-2">
+          {%- include social.html -%}
+        </div>
 
-      <div class="footer-col footer-col-3 dcf-txt-2xs dcf-d-inline-flex">
-        {{ site.title | escape -}}
-        <br/>Research Technical Support Specialist<br/>
-        {{ site.affiliation }}<br/>
-        </p>
-      </div>
-      <div class="footer-col footer-col-3 dcf-d-inline-flex">
-        <div id="footer_unl_rev_div">
-          <img src="https://cse.unl.edu/~wmotycka/assets/images/R_UNL_rev.png" height="60" width="80" viewport="0 100 120 0"/>
+        <div class="footer-col footer-col-3 dcf-txt-2xs dcf-d-inline-flex unl-cream dcf-mb-2">
+          {{ site.title | escape -}}
+          <br/>Research Technical Support Specialist<br/>
+          {{ site.affiliation }}<br/>
+          </p>
+        </div>
+        <div class="footer-col footer-col-3 dcf-d-inline-flex">
+          <div id="footer_unl_rev_div">
+            <img src="https://cse.unl.edu/~wmotycka/assets/images/R_UNL_rev.png" height="60" width="80" viewport="0 100 120 0"/>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
-
 </footer>
