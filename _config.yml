@@ -23,7 +23,7 @@ email: wmotycka@cse.unl.edu
 affiliation: School of Computing - University of Nebraska - Lincoln
 description: 
   Personal Homepage for Wayne Motycka
-baseurl: "" # the subpath of your site, e.g. /blog (or /homepage)
+baseurl: "~wmotycka" # the subpath of your site, e.g. /blog (or /homepage)
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://cse.unl.edu/~wmotycka"
 #url: "http://localhost:4000"
@@ -48,7 +48,7 @@ sass:
 bootstrap:
   load_paths:
     - _javascripts
-    - /home/wmotycka/.rvm/gems/ruby-2.6.4@wmotycka_home/gems/bootstrap-5.1.0/assets/javascript
+    - /usr/local/rvm/gems/ruby-2.6.4@wmotycka_home/gems/bootstrap-5.1.0/assets/javascripts
 
 minima:
   social_links:
