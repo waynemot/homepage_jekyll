@@ -129,9 +129,11 @@ Having the script only build when site content files have changed
 the build/deploy scripts can run as [crontab][crontab] jobs allowing
 running on the schedule specified.
 
-You may also want to host your site under a subdirectory of `~/public_html`, if so the
+You may also want to host your site under a subdirectory of `~/public_html`. If you do, the
 [.htaccess][htaccess] commands can be used that redirect/rewrite CSE-directed traffic 
-to the directory containing your site pages/content.
+to the directory containing your site pages/content. As it is, copying the site files
+directly under your `~/public_html` does not interfere with other web applications
+running out of your `~/public_html`.
 
 ### Jekyll Documentation
 
