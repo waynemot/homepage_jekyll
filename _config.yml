@@ -18,16 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Wayne Motycka
-email: wmotycka@cse.unl.edu
+title: Dr. Ashok Samal
+email: asamal@unl.edu
 affiliation: School of Computing - University of Nebraska - Lincoln
 description: 
-  Personal Homepage for Wayne Motycka
-baseurl: "~wmotycka" # the subpath of your site, e.g. /blog (or /homepage)
+  Personal Homepage for Professor Ashok Samal
+baseurl: "samal"
+#baseurl: "~samal" # the subpath of your site, e.g. /blog (or /homepage)
 # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://cse.unl.edu/~wmotycka"
-#url: "http://localhost:4000"
-github_username:  waynemot
+#url: "https://cse.unl.edu/~samal"
+url: "http://localhost:4000"
+#github_username:  waynemot
 
 # Build settings
 theme: minima
@@ -43,12 +44,12 @@ defaults:
 sass:
   load_paths:
     - _sass
-    -  /home/wmotycka/.rvm/gems/ruby-2.6.4@wmotycka_home/gems/bootstrap-5.1.0/assets/stylesheets
+    -  ${GEM_HOME}/gems/bootstrap-5.1.0/assets/stylesheets
 
 bootstrap:
   load_paths:
     - _javascripts
-    - /usr/local/rvm/gems/ruby-2.6.4@wmotycka_home/gems/bootstrap-5.1.0/assets/javascripts
+    - ${GEM_HOME}/gems/bootstrap-5.1.0/assets/javascripts
 
 minima:
   social_links:
