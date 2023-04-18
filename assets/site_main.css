@@ -38,7 +38,7 @@ header#login-header #header .name {
 .social-media-list li svg {
     display:flex;
     transform: translate(0, 2vw);
-    viewBox: "0 0 60 60";
+    viewport-fit: 0 0 60 60;
     height: 30px;
     width: 30px;
 }
@@ -97,3 +97,8 @@ a:hover {
         transform: translate(15vw, 2vw);
     }
 }
+
+.home .dcf-image-wrapper img {
+    width: 18em;
+}
+

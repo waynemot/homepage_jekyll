@@ -2,105 +2,119 @@
 <div class="home">
 
   <div class="dcf-wrapper dcf-mt-1">
-    <ul class="dcf-grid-halves@sm dcf-list-bare">
-      <li class="dcf-card dcf-d-flex dcf-flex-col">
-        <div class="dcf-card-block">
-          <div class="dcf-image-wrapper">
-            <img class='dcf-first' src="assets/images/wmotycka-square-300.jpg" alt="#{{ page.title }}" />
+    <div class="dcf-grid">
+      <div class="dcf-flex-col" style="grid-column: 1 / span 3;">
+        <div class="dcf-image-wrapper">
+          <img class='dcf-first' src="assets/images/ashok.jpg" alt="#{{ page.title }}" />
+        </div>
+      </div>
+      <div class="dcf-ml-1 dcf-flex-col" style="grid-column: 4 / span 9;">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'research');">Research Summary</button>
+          <button class="tablinks" onclick="openTab(event, 'pubs');">Selected Publications</button>
+          <button class="tablinks" onclick="openTab(event, 'teaching');">Teaching</button>
+          <button class="tablinks" onclick="openTab(event, 'links');">Useful Links</button>
+        </div>
+        <div class="dcf-tabs dcf-tabs-responsive dcf-ml-1">
+          <div id="research" class="tabcontent">
+            <h3><strong>Research Summary</strong></h3>
+            <p><em>Image Understanding</em>: 
+              In the area of image understanding my focus has been in face processing and document 
+              image analysis. While much of the research community has focused on recognition of the 
+              face, I have focused on extracting the full complement of the information 
+              from the face (identify, gender, expression, attractiveness).&nbsp; 
+              My research has made contributions in the applications where the appearance of the 
+              face is either unclear or is unavailable.&nbsp; 
+              Using a landmark based approach, we have developed techniques to match faces, 
+              sketches, and faces of parents and children. My research in document image analysis 
+              centers on engineering drawings, topographic maps, and mixed mode documents. 
+              Extraction of high level information from documents is a significant challenge 
+              and is critical to archival and semantic analysis.&nbsp; We have developed algorithms 
+              to extract underlying semantic structures from these three classes of documents.
+            </p>
+            <p><em>Geospatial Data Analysis and Spatial Data Mining</em>: 
+              Parsing the spatial organization to derive higher level features is a difficult 
+              challenge in geographic computation. We have developed techniques to extract these 
+              structures in their geographic contexts and exploit them for important problems 
+              including conflation and satellite image retrieval. 
+              My contribution in spatial 
+              data mining has been in explicitly incorporating the properties of the geographic 
+              space into the clustering algorithms; 
+              traditional clustering techniques are ineffective in the geospatial domain.
+            </p>
+          </div>
+          <div id="pubs" class="tabcontent">
+            <h3>Selected Publications </h3>
+              <p><strong>Image Understanding</strong></p>
+              <ol>
+                <li><em>Joyita Mallik</em>, Ashok Samal and Scott L. Gardner. A Content Based Image Retrieval System for a Biological Specimen Collection. Submitted to <em>Computer Vision and</em> <em>Image and Understanding</em>, January 2010.</li>
+                <li><em>Ramalingamurthy Meduri</em>, Ashok Samal, and Scott L. Gardner. ParasiteWeb: Web Based Framework for Content Based Image Retrieval System for HWML Parasite Collection. Accepted for publication in <em>Occasional Papers of the Museum</em>, August 2008.</li>
+                <li><em>Sarvani Kare</em>, Ashok Samal and David Marx.&nbsp; Face Recognition using Bidimensional Regression. <em>Machine Vision and Applications</em>, Vol. 19, No. 1. 2008 </li>
+                <li><em>Sudhindra Shukla</em> and Ashok Samal. Recognition and Quality Assessment of Data Charts in Mixed Mode Documents. Accepted for publication <em>to International Journal of Document Analysis and Recognition</em>, April 2008.</li>
+                <li><em>Govinda Konda Naganathan</em>, Jeyam Subbiah, and Ashok Samal. Visible/Near-Infrared Hyperspectral Imaging for Beef Tenderness Prediction.&nbsp; <em>Computers and Electronics in Agriculture</em>, Available online on 7 July 2008.</li>
+                <li>Debasis Chaudhuri and Ashok Samal.&nbsp; An Automatic Bridge Detection Technique for Multi-spectral Images. <em>IEEE Transactions in Geosciences and Remote Sensing</em>, Vol. 46, No, 9, pp. 2720-2727, September 2008.</li>
+                <li><em>Kendra Schmid</em>, David Marx and Ashok Samal.&nbsp; Computation of a Face Attractiveness Index Based on Neoclassical Canons, Symmetry, and Golden Ratios.&nbsp; <em>Pattern Recognition</em>, Vol. 41, No. 8, pp. 2710-2717, August 2008. </li>
+                <li>Debasis Chaudhuri and Ashok Samal. A Simple Method for Fitting Bounding Rectangle to Closed Regions. <em>Pattern Recognition</em>, Vol. 40, No. 7, pp. 1981-1989, 2007. </li>
+                <li><em>Dongsheng Zhang</em>, James R. Brandle, and Ashok Samal. A Method for Estimating Fractal Dimension of Tree Crowns from Digital Images. <em>International Journal of Pattern Recognition and Artificial Intelligence</em>, Vol. 21, No. 3, pp. 543-559, 2007</li>
+                <li><em>Jiazheng Shi</em>, Ashok Samal and David Marx. Face Recognition Using Landmark-based Bidimensional Regression. <em>Computer Vision and Image Understanding</em>, Vol.102, No. 2, pp. 117-133, 2006.</li>
+              </ol>
+              <p><strong>Geospatial Data Analysis and Spatial Data Mining</strong></p>
+              <ol>
+                <li>Deepti Joshi, Leen-Kiat Soh and Ashok Samal, Redistricting Using Heuristic-Based Polygonal Clustering,&nbsp; IEEE International Conference on Data Mining (ICDM&rsquo;2009), Miami, FL, December 6-9, 2009.</li>
+                <li>Deepti Joshi, Leen-Kiat Soh and Ashok Samal, A Dissimilarity Function for Clustering Geospatial Polygons,&nbsp; Proceedings of 17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM-GIS), Seattle, WA, November 2009.</li>
+                <li>D. Joshi, A. K. Samal, and L. K. Soh, Density-Based Clustering of Polygons, IEEE Symposium Series on Computational Intelligence and Data Mining, 2009, pp: 171-178.</li>
+                <li>Tao Hong, Ashok Samal, and Leen-Kiat Soh. Computing Information Gain for Spatial Data Support. 16th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM-GIS), Irvine, CA, November 2008.</li>
+                <li>Kendra Schmid, David Marx and Ashok Samal. Weighted Bidimensional Regression. Accepted for publication in Geographical Analysis), 2009.</li>
+                <li>Leen-Kiat Soh, Ashok Samal and Lei Fu.&nbsp; Techniques for Computing Fitness of Use (FoU) for Time Series Datasets with Applications in the Geospatial Domain.&nbsp; Geoinformatica, Volume 12, No. 1, pp. 73-89, March 2008. </li>
+                <li>A. Samal and S. Seth. Abstract Feature Extraction from Remotely Sensed Images of Urban Areas. in Encyclopedia of Geographic Information Systems. Eds. S. Shekhar and H. Xiong.&nbsp; Springer, 2008, pp. 314-320.</li>
+                <li>Tao Hong, Ashok Samal, and Leen-Kiat Soh. Computing Information Gain for Spatial Data Support. ACM-GIS, November 2008.</li>
+                <li>A. Kerby, D. Marx, Ashok Samal, and V. Adamchuck. Spatial Clustering Using the Likelihood Function. Seventh IEEE International Conference on Data Mining, Workshop on Spatial and Spatio-Temporal Data Mining, Omaha, NE, pp. 637-642, October 2007.</li>
+                <li>Ashok Samal, Sharad Seth and <em>Kevin Cueto</em>. A Feature-Based Approach to Conflation of Geospatial Sources. International<em> Journal of Geographic Information Science</em>, Vol.18, No. 3, pp. 459-490, 2004.</li>
+              </ol>
+
+          </div>
+          <div id="teaching" class="tabcontent">
+            <h3>Course Information</h3>
+            <p>
+              I normally teach the following courses.
+            </p>
+            <ul>
+              <li> CSCE 473/873: Introduction to       Computer Vision</li>
+              <li> CSCE 474/874: Introduction to         Data Mining</li>
+            </ul>
+          </div>
+          <div id="links" class="tabcontent">
+            <p><a href="http://cse.unl.edu/graduate">CSE Graduate Program</a></p>
           </div>
         </div>
-      </li>
-      <li class="dcf-card dcf-d-flex dcf-flex-col">
-        <div class="dcf-card-block">
-          Research Technical Support Specialist
-          <br/>
-          School of Computing Web Technologies Support
-          <br/>
-          Office: Avery 27A
-          <br/>
-          Phone: (402) 472-5069
-          <br/>
-          Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email | replace: "@", "&lt;at&gt;" }}</a>
-          <br/>
-          <hr/>
-          <h5>
-            Education
-          </h5>
-          A.S. Electronics Engineering<br/>
-          B.S. Computer Science<br/>
-          M.S. Computer Science
-          <br/>
-          <br/>
-          <h5>
-            Past Experience
-          </h5>
-          <ul class="dcf-list-bare">
-            <li>
-              AT&T Bell Telephone Laboratories
-              <ul class="dcf-list dcf-txt-xs">
-                <li>
-                  Switch - adjunct processor interface hardware development
-                </li>
-                <li>
-                  Adjunct systems test engineering
-                </li>
-                <li>
-                  Factory software production support
-                </li>
-                <li>
-                  Quality management process definition and deployment
-                </li>
-              </ul>
-            </li>
-            <li>
-              Lucent Technologies - Bell Labs
-              <ul class="dcf-list dcf-txt-xs">
-                <li>
-                  Product support engineering
-                </li>
-                <li>
-                  Project management
-                </li>
-              </ul>
-            </li>
-            <li>
-              Avaya Labs
-              <ul class="dcf-list dcf-txt-xs">
-                <li>
-                  Voice mail/integrated messaging systems engineering
-                </li>
-                <li>
-                  Central-office messaging systems engineering
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
+        <script>
+          function openTab(evt, link_id) {
+            console.log("link id:"+link_id);
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName('tabcontent');
+            for(i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(link_id).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+        </script>
+      </div>
+    
+    </div>
   {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+  <script>
+    window.addEventListener('inlineJSReady', function() {
+      $("#research").style.display = 'display';
+      $("#pubs").style.display = 'none';
+      $("#teaching").style.display = 'none';
+      $("#links").style.display = 'none';
+      console.log("inline JS Ready event done...");
+    });
+  </script>
+  </div>
 </div>

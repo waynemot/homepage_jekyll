@@ -53,8 +53,7 @@ bootstrap:
 
 minima:
   social_links:
-    linkedin: wayne-motycka-7090342
-    github: waynemot
+
 #
 # Exclude from processing.
 # The following items will not be processed, by default.

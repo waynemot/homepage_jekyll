@@ -3,21 +3,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
+  <link rel="preload" href="https://unlcms.unl.edu/wdn/templates_5.3/css/critical.css?dep=5.3.27" as="style">
+  <link id="unl-css-critical" rel="stylesheet" href="https://unlcms.unl.edu/wdn/templates_5.3/css/critical.css?dep=5.3.27">
   <link rel="preload" href="https://unlcms.unl.edu/wdn/templates_5.3/fonts/liberator/liberator-heavyitalic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cse.unl.edu/~wmotycka/assets/fonts/tungsten/561f38b1f4570de0fb8a39d691ab058c.woff2" as="font" type="font/woff2">
+  <!-- <link rel="preload" href="https://cse.unl.edu/~wmotycka/assets/fonts/tungsten/561f38b1f4570de0fb8a39d691ab058c.woff2" as="font" type="font/woff2"> -->
   <link rel="preload" href="https://cloud.typography.com/7717652/7106412/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <style>@font-face{font-family:'liberatorheavy_italic';src:url('https://unlcms.unl.edu/wdn/templates_5.3/fonts/liberator/liberator-heavyitalic.woff2') format('woff2'), url('https://unlcms.unl.edu/wdn/templates_5.3/fonts/liberator/liberator-heavyitalic.woff') format('woff');font-display:swap}.unl h1.unl-font-display,.unl h2.unl-font-display,.unl h3.unl-font-display,.unl h4.unl-font-display,.unl h5.unl-font-display,.unl h6.unl-font-display,.unl-font-display{font-family:'Arial Narrow', sans-serif;font-style:italic;letter-spacing:0;margin-left:0;text-transform:uppercase}.unl-fonts-loaded .unl h1.unl-font-display,.unl-fonts-loaded .unl h2.unl-font-display,.unl-fonts-loaded .unl h3.unl-font-display,.unl-fonts-loaded .unl h4.unl-font-display,.unl-fonts-loaded .unl h5.unl-font-display,.unl-fonts-loaded .unl h6.unl-font-display,.unl-fonts-loaded .unl-font-display{font-family:'liberatorheavy_italic', 'Arial Narrow', sans-serif;font-style:normal;font-weight:600;text-transform:none}</style>
+
   <link rel="stylesheet" href="https://unlcms.unl.edu/wdn/templates_5.3/css/main.css?dep=5.3.4">
   <link rel="stylesheet" href="{{ '/assets/site_main.css' | relative_url }}">
+  <script src="{{ '/assets/bootstrap/js/bootstrap.min.js' | relative_url }}" type="text/javascript"></script>
   <script
           src="https://code.jquery.com/jquery-3.6.0.js"
           integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
           crossorigin="anonymous">
   </script>
-  <script src="{{ '/assets/bootstrap/js/bootstrap.min.js' | relative_url }}" type="text/javascript"></script>
+  
   <link rel="shortcut icon" href="https://unlcms.unl.edu/wdn/templates_5.3/includes/global/favicon/favicon.ico"/>
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
 </head>
