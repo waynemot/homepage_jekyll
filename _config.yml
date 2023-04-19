@@ -23,7 +23,7 @@ email: asamal@unl.edu
 affiliation: School of Computing - University of Nebraska - Lincoln
 description: 
   Personal Homepage for Professor Ashok Samal
-baseurl: "samal"
+baseurl: "~samal"
 #baseurl: "~samal" # the subpath of your site, e.g. /blog (or /homepage)
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://cse.unl.edu/~samal"
