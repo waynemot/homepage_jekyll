@@ -102,3 +102,11 @@ a:hover {
     width: 18em;
 }
 
+div.home button.tablinks {
+    border: none;
+}
+
+div.home button.tablinks.active {
+    border: 1px solid black;
+    background: inherit;
+}
