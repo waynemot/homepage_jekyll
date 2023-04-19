@@ -103,10 +103,13 @@ a:hover {
 }
 
 div.home button.tablinks {
-    border: none;
+    border: 0;
+    background: var(--bg-body);
 }
 
 div.home button.tablinks.active {
-    border: 1px solid black;
-    background: inherit;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background: var(--bg-tab-selected);
 }

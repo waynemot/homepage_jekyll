@@ -2,6 +2,9 @@
 <div class="home">
 
   <div class="dcf-wrapper dcf-mt-1">
+    <div class="dcf-col" style="text-align: center;">
+      <h3>Professor Ashok Samal</h3>
+    </div>
     <div class="dcf-grid">
       <div class="dcf-flex-col" style="grid-column: 1 / span 3;">
         <div class="dcf-image-wrapper">
@@ -10,7 +13,7 @@
       </div>
       <div class="dcf-ml-1 dcf-flex-col" style="grid-column: 4 / span 9;">
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'research');" aria-label="research" aria-controls="research" aria-selected="false">Research Summary</button>
+          <button class="tablinks active" onclick="openTab(event, 'research');" aria-label="research" aria-controls="research" aria-selected="true">Research Summary</button>
           <button class="tablinks" onclick="openTab(event, 'pubs');" aria-label="publications" aria-controls="pubs" aria-selected="false">Selected Publications</button>
           <button class="tablinks" onclick="openTab(event, 'teaching');" aria-controls="teaching" aria-label="teaching" aria-selected="false">Teaching</button>
           <button class="tablinks" onclick="openTab(event, 'links');" aria-controls="links" aria-label="links" aria-selected="false">Useful Links</button>
@@ -98,6 +101,7 @@
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
               tablinks[i].className = tablinks[i].className.replace(" active", "");
+              //tablinks[i].style.border = "0";
             }
             document.getElementById(link_id).style.display = "block";
             evt.currentTarget.className += " active";
@@ -110,6 +114,7 @@
   <script>
     window.addEventListener('ready', function() {
       $("#research").style.display = 'display';
+      $("button.tablinks")[0].style.border = "1px 1px 0 1px solid black";
       $("#pubs").style.display = 'none';
       $("#teaching").style.display = 'none';
       $("#links").style.display = 'none';
