@@ -64,8 +64,8 @@ a:hover {
 }
 
 /* Dark mode */
-body.unl.html.front.unl\@dark button.btn {
-        color: var(--body);
+body.unl.html.front.unl\@dark button.btn{
+        color: #fefdfe;
 }
 
 @media (prefers-color-scheme: dark) {
