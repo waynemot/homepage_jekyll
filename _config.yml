@@ -26,8 +26,8 @@ description:
 baseurl: "samal"
 #baseurl: "~samal" # the subpath of your site, e.g. /blog (or /homepage)
 # the base hostname & protocol for your site, e.g. http://example.com
-#url: "https://cse.unl.edu/~samal"
-url: "http://localhost:4000"
+url: "https://cse.unl.edu/~samal"
+#url: "http://localhost:4000"
 #github_username:  waynemot
 
 # Build settings
