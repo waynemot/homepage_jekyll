@@ -87,7 +87,7 @@ body.unl.html.front.unl\@dark button.btn{
         color: #71bdd3;
     }
     .btn {
-        color: --b-btn-primary;
+        color: var(--body);
     }
 }
 
