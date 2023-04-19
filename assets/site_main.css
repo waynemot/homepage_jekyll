@@ -64,8 +64,13 @@ a:hover {
 }
 
 /* Dark mode */
+body.unl.html.front.unl\@dark button.btn {
+        color: var(--body);
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
+        --body: #FFFFFF;
         --body-bg: #242423;
         --body-color: #FFFFFF;
         --link: #71bdd3;
@@ -80,6 +85,9 @@ a:hover {
     }
     a:hover {
         color: #71bdd3;
+    }
+    .btn {
+        color: --b-btn-primary;
     }
 }
 
@@ -97,6 +105,9 @@ a:hover {
         transform: translate(15vw, 2vw);
     }
 }
+
+html {height: -webkit-fill-available;}
+body{min-height:100vh; min-height: -webkit-fill-available;}
 
 .home .dcf-image-wrapper img {
     width: 18em;
