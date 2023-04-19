@@ -103,13 +103,28 @@ a:hover {
 }
 
 div.home button.tablinks {
+    margin-bottom: -1px;
+    margin-right: -0.3em;
     border: 0;
     background: var(--bg-body);
+    border-bottom: 1px solid gray;
 }
 
 div.home button.tablinks.active {
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
+    border-bottom: 1px solid var(--bg-body);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background: var(--bg-tab-selected);
+}
+
+div.home div.tabcontent {
+    border: 1px solid black;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    max-width:95%;
 }
