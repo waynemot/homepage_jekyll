@@ -118,13 +118,13 @@ div.home button.tablinks {
     margin-right: -0.3em;
     border: 0;
     background: var(--bg-body);
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--body-color);
 }
 
 div.home button.tablinks.active {
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 1px solid var(--body-color);
+    border-right: 1px solid var(--body-color);
+    border-left: 1px solid var(--body-color);
     border-bottom: 1px solid var(--bg-body);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
