@@ -63,9 +63,34 @@ a:hover {
     }
 }
 
+body.unl.html.front.unl\@light div.home button.btn.tablinks {
+    border: none;
+}
+
+body.unl.html.front.unl\@light div.home button.btn.tablinks.active {
+    border-top: 1px solid var(--body);
+    border-bottom: 1px solid var(--bg-body);
+    border-left: 1px solid var(--body);
+    border-right: 1px solid var(--body);
+}
 /* Dark mode */
 body.unl.html.front.unl\@dark button.btn{
         color: #fefdfe;
+}
+
+body.unl.html.front.unl\@dark button.btn.tablinks {
+    border: none;
+}
+
+body.unl.html.front.unl\@dark button.btn.tablinks.active {
+    border-top: 1px solid var(--body);
+    border-bottom: 1px solid var(--bg-body);
+    border-left: 1px solid var(--body);
+    border-right: 1px solid var(--body);
+}
+
+body.unl.html.front.unl\@dark div.tabcontent {
+    border: 1px solid var(--bg-body);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -113,7 +138,7 @@ body{min-height:100vh; min-height: -webkit-fill-available;}
     width: 18em;
 }
 
-div.home button.tablinks {
+body.unl.html.front div.home button.tablinks {
     margin-bottom: -1px;
     margin-right: -0.3em;
     border: 0;
@@ -121,7 +146,7 @@ div.home button.tablinks {
     border-bottom: 1px solid var(--body-color);
 }
 
-div.home button.tablinks.active {
+body.unl.html.front div.home button.tablinks.active {
     border-top: 1px solid var(--body-color);
     border-right: 1px solid var(--body-color);
     border-left: 1px solid var(--body-color);
@@ -131,9 +156,8 @@ div.home button.tablinks.active {
     background: var(--bg-tab-selected);
 }
 
-div.home div.tabcontent {
-    border: 1px solid black;
-    
+body.unl.html.front div.home div.tabcontent {
+    border: 1px solid var(--body);
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
