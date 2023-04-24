@@ -124,10 +124,18 @@ body.unl.html.front.unl\@dark div.tabcontent {
     #footer_unl_rev_div {
         transform: translate(40vw, 2vw);
     }
+    body.unl.html.front.unl button.btn.tablinks.active {
+        color: var(--link);
+        text-decoration: underline;
+    }
 }
 @media screen and (max-width: 675px) {
     #footer_unl_rev_div {
         transform: translate(15vw, 2vw);
+    }
+    body.unl.html.front.unl button.btn.tablinks.active {
+        color: var(--link);
+        text-decoration: underline;
     }
 }
 
@@ -139,6 +147,9 @@ body{min-height:100vh; min-height: -webkit-fill-available;}
 }
 
 body.unl.html.front div.home button.tablinks {
+    background-color: var(--body-bg);
+    color:var(--body-color);
+    font-size: calc(.92855em + .22632vw);
     margin-bottom: -1px;
     margin-right: -0.3em;
     border: 0;
@@ -147,6 +158,8 @@ body.unl.html.front div.home button.tablinks {
 }
 
 body.unl.html.front div.home button.tablinks.active {
+    /*text-decoration: underline;*/
+    /* color:var(--link); */
     border-top: 1px solid var(--body-color);
     border-right: 1px solid var(--body-color);
     border-left: 1px solid var(--body-color);
@@ -163,3 +176,4 @@ body.unl.html.front div.home div.tabcontent {
     padding-top: 1em;
     max-width:95%;
 }
+/* font-size: calc(.82855em + .22632vw); */
