@@ -158,8 +158,8 @@ body.unl.html.front div.home button.tablinks {
 }
 
 body.unl.html.front div.home button.tablinks.active {
-    text-decoration: underline;
-    color:var(--link);
+    /*text-decoration: underline;
+    color:var(--link);*/
     border-top: 1px solid var(--body-color);
     border-right: 1px solid var(--body-color);
     border-left: 1px solid var(--body-color);
