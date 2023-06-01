@@ -15,8 +15,8 @@ then
     done
     if [[ $rebuild = 1 ]]
     then
-        jekyll build JEKYLL_ENV=production && cp -r _site/* /var/www/html/samal/.
-	chmod a+x /var/www/html/samal/assets/*
+        jekyll build JEKYLL_ENV=production && cp -r _site/* ~samal/public_html/.
+	chmod a+x ~samal/assets/*
     fi
 else
     if [ `uname -n` == "wmotycka-fw01" ]
